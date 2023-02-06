@@ -21,7 +21,7 @@ class NewsPage(View):
         articles = []
         for article in article_list:
             article['created'] = article['created'][0:10]
-            articles.append(article)
+            articles.append(article) # aa
 
         q = request.GET.get('q')
         if q:
